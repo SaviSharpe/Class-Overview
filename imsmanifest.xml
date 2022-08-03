@@ -1,69 +1,47 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest identifier="_5yWdOsd8rkv" version="1.0" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest identifier="_6eVYgOHF2Mg" version="1.3" xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3" xmlns:adlseq="http://www.adlnet.org/xsd/adlseq_v1p3" xmlns:adlnav="http://www.adlnet.org/xsd/adlnav_v1p3" xmlns:imsss="http://www.imsglobal.org/xsd/imsss" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
+                        http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd
+                        http://www.adlnet.org/xsd/adlseq_v1p3 adlseq_v1p3.xsd
+                        http://www.adlnet.org/xsd/adlnav_v1p3 adlnav_v1p3.xsd
+                        http://www.imsglobal.org/xsd/imsss imsss_v1p0.xsd">
   <metadata>
     <schema>ADL SCORM</schema>
-    <schemaversion>1.2</schemaversion>
-    <lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd">
-      <general>
-        <title>
-          <langstring xml:lang="x-none">Classes at TAC - NoVid</langstring>
-        </title>
-      </general>
-      <lifecycle>
-        <version>
-          <langstring xml:lang="x-none">1</langstring>
-        </version>
-        <status>
-          <source>
-            <langstring xml:lang="x-none">LOMv1.0</langstring>
-          </source>
-          <value>
-            <langstring xml:lang="x-none">Final</langstring>
-          </value>
-        </status>
-      </lifecycle>
-      <metametadata>
-        <metadatascheme>ADL SCORM 1.2</metadatascheme>
-      </metametadata>
-      <educational>
-        <typicallearningtime>
-          <datetime>PT0H0M0S</datetime>
-        </typicallearningtime>
-      </educational>
-      <rights>
-        <cost>
-          <source>
-            <langstring xml:lang="x-none">LOMv1.0</langstring>
-          </source>
-          <value>
-            <langstring xml:lang="x-none">yes</langstring>
-          </value>
-        </cost>
-        <copyrightandotherrestrictions>
-          <source>
-            <langstring xml:lang="x-none">LOMv1.0</langstring>
-          </source>
-          <value>
-            <langstring xml:lang="x-none">yes</langstring>
-          </value>
-        </copyrightandotherrestrictions>
-      </rights>
-    </lom>
+    <schemaversion>CAM 1.3</schemaversion>
+    <adlcp:location>metadata.xml</adlcp:location>
   </metadata>
-  <organizations default="Classes_at_TAC_-_NoVid_ORG">
-    <organization identifier="Classes_at_TAC_-_NoVid_ORG">
-      <title>Classes at TAC - NoVid</title>
-      <item identifier="Classes_at_TAC_-_NoVid_SCO" isvisible="true" identifierref="__5yWdOsd8rkv_RES">
-        <title>Classes at TAC - NoVid</title>
-        <adlcp:masteryscore>100</adlcp:masteryscore>
+  <organizations default="Classes_at_TAC_ORG">
+    <organization identifier="Classes_at_TAC_ORG" adlseq:objectivesGlobalToSystem="false">
+      <title>Classes at TAC</title>
+      <item identifier="Classes_at_TAC_SCO" identifierref="__6eVYgOHF2Mg_RES" isvisible="true">
+        <title>Classes at TAC</title>
+        <imsss:sequencing>
+          <imsss:deliveryControls tracked="true" completionSetByContent="true" objectiveSetByContent="true" />
+        </imsss:sequencing>
       </item>
+      <metadata>
+        <adlcp:location>metadata.xml</adlcp:location>
+      </metadata>
+      <imsss:sequencing>
+        <imsss:controlMode choice="true" flow="true" />
+        <imsss:deliveryControls tracked="true" completionSetByContent="false" objectiveSetByContent="false" />
+      </imsss:sequencing>
     </organization>
   </organizations>
   <resources>
-    <resource identifier="__5yWdOsd8rkv_RES" type="webcontent" href="index_lms.html" adlcp:scormtype="sco">
+    <resource identifier="__6eVYgOHF2Mg_RES" type="webcontent" adlcp:scormType="sco" href="index_lms.html">
       <file href="story_content/thumbnail.jpg" />
       <file href="mobile/5uo1GH0SU4m_P_0_364_1920_716.png" />
       <file href="mobile/5dlutJ3YCFr.png" />
+      <file href="story_content/video_6nWILxREE3b_22_56_420x236.mp4" />
+      <file href="mobile/poster_6eCLoctnnmY_video_6nWILxREE3b_22_56_420x236.jpg" />
+      <file href="story_content/video_5VHY888T73Q_22_56_420x236.mp4" />
+      <file href="mobile/poster_6cnqvkbJTdY_video_5VHY888T73Q_22_56_420x236.jpg" />
+      <file href="story_content/video_6Pyh4Z66IxM_22_56_420x236.mp4" />
+      <file href="mobile/poster_6KqA6aaL6vI_video_6Pyh4Z66IxM_22_56_420x236.jpg" />
+      <file href="story_content/video_6EjnqBl1bo4_22_56_420x236.mp4" />
+      <file href="mobile/poster_6XdhHysugpz_video_6EjnqBl1bo4_22_56_420x236.jpg" />
+      <file href="story_content/video_5xLvvM7aC3n_22_56_420x236.mp4" />
+      <file href="mobile/poster_6Ds0110ZzyR_video_5xLvvM7aC3n_22_56_420x236.jpg" />
       <file href="mobile/5vjV9HGQARQ_P_0_61_1056_754.png" />
       <file href="mobile/5qVUP2Qm7A9.png" />
       <file href="mobile/6EfEhDaPozi.png" />
